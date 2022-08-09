@@ -252,7 +252,7 @@
 const btn_animate = document.getElementById('button')
 // Initialize AsciiMorph
 var element = document.querySelector('pre');
-AsciiMorph(element, {x: 50,y: 25});
+AsciiMorph(element, {x: 25,y: 15});
 
 var fires = [[
 "    ,   .''.   ,",

@@ -9,6 +9,14 @@
 .log {
     max-width: 300px;
     min-width: 185px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
+.button-container {
+    min-width: 240px;
 }
 
 .data {
@@ -51,6 +59,12 @@
 
 .button:disabled {
     background-color: grey;
+    color: gainsboro;
+    border-color: gainsboro;
+}
+
+.log-text {
+    margin-bottom: 10px;
 }
 
 body {

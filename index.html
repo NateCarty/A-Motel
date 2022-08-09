@@ -12,18 +12,21 @@
 </head>
 <body>
    <div class="container">
-    <div class="log">A dirty motel room looked back at you as you opened your eyes</div>
+    <div class="log" id="log">
+        <div> A dirty motel room looked back at you as you opened your eyes</div>
+    </div>
     <div class="button-container">
         <div class="title">A Motel</div>
         <button class="button" id="button">Put log in fireplace
-         <div class="cooldown"></div></button></div>
+         <div class="cooldown"></div></button>
+         <div class="art-container">
+        <!-- Pre elements are perfect for this. -->
+        <pre class="ascii-element">
+        </pre>
+        </div> 
+    </div>
     <div class="data">Fur: 1000</div>
    </div>
-   <div class="art-container">
-    <!-- Pre elements are perfect for this. -->
-    <pre class="ascii-element">
-    </pre>
-    </div> 
    <script src="game.js"></script>
    <script src="asciiMorph.js"></script>
 </body>
