@@ -8,10 +8,12 @@
 
 .log {
     max-width: 300px;
+    min-width: 185px;
 }
 
 .data {
     margin-left: 20vw;
+    min-width: 65px;
 }
 
 .art-container {
@@ -21,17 +23,26 @@
 
 .ascii-element {
     font-family: 'Courier Prime', monospace;
+    min-width: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     stroke: blueviolet;
     margin-bottom: 20px;
     margin-left: 15px;
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 .title:hover {
     cursor: pointer;
+}
+
+body {
+    min-width: 180px;
+    overflow: hidden;
 }
