@@ -42,6 +42,17 @@
     cursor: pointer;
 }
 
+.button {
+    background-color: white;
+    font-family: inherit;
+    font-size: 16px;
+    border-width: 1px;
+}
+
+.button:disabled {
+    background-color: grey;
+}
+
 body {
     min-width: 180px;
     overflow: hidden;
