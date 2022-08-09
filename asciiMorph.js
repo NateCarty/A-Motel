@@ -264,7 +264,32 @@ var fires = [[
 "   |=| o        o |=|",
 "  _|-| !   `(   ! |-|_",
 " /==_| ! _(_.)_ ! |=_-\\",
-" |jgs|/^\^=^^=^/^\| _=|"],[
+" |jgs|/^\^=^^=^/^\| _=|"
+],[
+"    ,   .''.   ,",
+"    , #   |()|   # ,",
+"   _#_#___|__|___#_#__",
+"  [__________________]",
+"   |-_ -=__=-_ -==_-|",
+"   |_.------------.=|",
+"   |=| o   ` )  o |=|",
+"  _|-| !    (   ! |-|_",
+" /==_| ! _(_.)_ ! |=_-\\",
+" |jgs|/^\^=^^=^/^\| _=|"
+],[
+"    ,   .''.   ,",
+"    , #   |()|   # ,",
+"   _#_#___|__|___#_#__",
+"  [__________________]",
+"   |-_ -=__=-_ -==_-|",
+"   |_.------------.=|",
+"   |=| o        o |=|",
+"  _|-| !   )    ! |-|_",
+" /==_| ! _(_.)_ ! |=_-\\",
+" |jgs|/^\^=^^=^/^\| _=|"
+]]
+
+var meditate = [[
   "                _ooOoo_",
   "               o8888888o",
   "               88\" . \"88",
@@ -286,23 +311,14 @@ var fires = [[
   ]
 ]
 
-
+var buttonIndex = 0
 btn_animate.addEventListener("click", () => {
-    AsciiMorph.render(fires[0])
+    if (buttonIndex > fires.length - 1) {
+      buttonIndex = 0
+    }
+    AsciiMorph.render(fires[buttonIndex])
+    buttonIndex++
 
-    var currentIndex = 2
-    console.log("clicked")
     btn.disabled = true;
-    setTimeout(function() {
-      AsciiMorph.morph(fires[1]);
-    }, 500);
-    
-    setInterval(function() {
-      if (currentIndex > fires.length -1){
-        currentIndex = 0
-      }
-      AsciiMorph.morph(fires[currentIndex]);
-      currentIndex++;
-      currentIndex%= fires.length;
-    }, 3000);
+
 })
