@@ -1,7 +1,7 @@
 const btn = document.getElementById('button')
 const log = document.getElementById('log')
 
-var buttonDelay = 1000;
+var buttonDelay = 4000;
 count = 0;
 
 function printMessage(message){
