@@ -8,7 +8,7 @@
 
 .log {
     max-width: 300px;
-    min-width: 185px;
+    min-width: 220px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -20,10 +20,6 @@
 }
 
 .data {
-    margin-left: 20vw;
-    min-width: 140px;
-    border-style: solid;
-    border-width: 1px;
     padding: 15px;
     text-align: left;
     display: flex;
@@ -81,6 +77,12 @@
     justify-content: space-between;
 }
 
+.row-container {
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    min-width: 160px;
+}
 
 body {
     min-width: 180px;
