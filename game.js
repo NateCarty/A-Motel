@@ -1,7 +1,7 @@
 const btn = document.getElementById('button')
 const log = document.getElementById('log')
 
-var buttonDelay = 4500;
+var buttonDelay = 45;
 count = 0;
 
 function printMessage(message){
@@ -9,6 +9,7 @@ function printMessage(message){
     var new_div = document.createElement("div")
     new_div.className = ('log-text')
     const text = document.createTextNode(message + "\n")
+    count++
     new_div.appendChild(text)
     log.appendChild(new_div)
 }
@@ -18,6 +19,10 @@ function clearHidden(){
     console.log(logs)
     if (logs.length > 20){
         for (var i = 20; i < logs.length; i++){
+            const first = document.getElementById('starting-log')
+            if (first != null) {
+                first.remove()
+            }
             logs[i].remove()
         }
     }
